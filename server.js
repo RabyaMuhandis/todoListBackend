@@ -30,7 +30,7 @@ app.use(express.json());
 
 // routes
 app.use('/api/auth', authRoutes);   // ✅ fixed
-app.use('/tasks', tasksRoutes);
+app.use('/api/tasks', tasksRoutes);
 
 // connect to DB
 connectDB();
@@ -38,3 +38,6 @@ connectDB();
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+
+module.exports = app;
