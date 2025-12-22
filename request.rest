@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/tasks
+
+###
+POST  http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "id" : 1,
+    "taskname" :"book reading",
+    "status" :""
+}
+
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "testuser",
+    "email": "rauf@gmail.com",
+    "password": "testpassword"
+}
+
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "rauf@gmail.com",
+    "password": "testpassword"
+}
